@@ -1,0 +1,7 @@
+# 忽略 VSCode 的配置目录
+.vscode/
+
+# 忽略构建文件夹（无论是 build 还是 Build、BUILD）
+build*/
+
+
