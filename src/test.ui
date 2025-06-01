@@ -25,7 +25,6 @@
   <property name="windowTitle">
    <string>窗口</string>
   </property>
-<!--界面组件-->
   <widget class="QWidget" name="centralwidget">
    <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry">
@@ -49,6 +48,84 @@
      </size>
     </property>
    </widget>
+   <widget class="QPushButton" name="selectPathButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择文件路径</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openImageButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>60</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择基准图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_path">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>20</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>路径: （未选择）</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_filename">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>60</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>文件: （未选择）</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadIntrinsicsButton">
+ <property name="geometry">
+  <rect>
+   <x>700</x>
+   <y>100</y>
+   <width>100</width>
+   <height>30</height>
+  </rect>
+ </property>
+ <property name="text">
+  <string>导入相机内参</string>
+ </property>
+</widget>
+<widget class="QPushButton" name="undistortButton">
+ <property name="geometry">
+  <rect>
+   <x>700</x>
+   <y>140</y>
+   <width>100</width>
+   <height>30</height>
+  </rect>
+ </property>
+ <property name="text">
+  <string>畸变矫正</string>
+ </property>
+</widget>
   </widget>
  </widget>
  <resources/>
